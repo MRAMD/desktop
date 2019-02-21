@@ -398,10 +398,6 @@ export async function rebaseConflictsHandler(
 
   // TODO: metrics - https://github.com/desktop/desktop/issues/6550
 
-  if (gitContext == null) {
-    return error
-  }
-
   const { currentBranch } = gitContext
 
   dispatcher.showPopup({
